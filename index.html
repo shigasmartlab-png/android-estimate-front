@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>修理見積もりフォーム</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>修理見積もりシミュレータ</h1>
+
+  <form>
+    <label for="model">機種:</label>
+    <select id="model"></select>
+
+    <label for="repair_type">故障内容:</label>
+    <select id="repair_type"></select>
+
+    <fieldset>
+      <legend>オプション</legend>
+      <div id="options-area"></div>
+    </fieldset>
+
+    <button type="button" onclick="estimate()">金額を表示（目安）</button>
+  </form>
+
+  <div id="result"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
